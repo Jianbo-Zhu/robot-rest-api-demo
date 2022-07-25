@@ -5,17 +5,15 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
+  workflow_dispatch:
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: install dependencies
-      run: make install
-      
-    - name: run regression tests
-      run: make run-regression
+      uses: Jianbo-Zhu/jianbo-robot-action@v0.0.1-alpha
+        
