@@ -17,9 +17,9 @@ jobs:
     - name: install dependencies
       uses: Jianbo-Zhu/jianbo-robot-action@v0.0.3
       with:
-        railflow_key: HZPMZ-DCTWJ-UDWXL-YZAGT
-        testrail_username: lemurzjb@gmail.com
-        testrail_password: WmK74TXEXXS7rDq
+        railflow_key: ${{ secrets.RAILFLOW_KEY }}
+        testrail_username: ${{ secrets.TESTRAIL_USERNAME }}
+        testrail_password: ${{ secrets.TESTRAIL_PASSWORD }}
         testrail_url: https://tr.railflow.io/
         testrail_project: robot-action-x-single
         testrail_test_plan: tp
