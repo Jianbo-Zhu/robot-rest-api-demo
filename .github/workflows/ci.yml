@@ -18,8 +18,8 @@ jobs:
       uses: Jianbo-Zhu/jianbo-robot-action@v0.0.3
       with:
         railflow_key: HZPMZ-DCTWJ-UDWXL-YZAGT
-        railflow_username: lemurzjb@gmail.com
-        railflow_password: WmK74TXEXXS7rDq
+        testrail_username: lemurzjb@gmail.com
+        testrail_password: WmK74TXEXXS7rDq
         testrail_url: https://tr.railflow.io/
         testrail_project: robot-action-x-single
         testrail_test_plan: tp
